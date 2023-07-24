@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Update Pass View Controller-->
+        <scene sceneID="Pma-z1-40F">
+            <objects>
+                <viewController storyboardIdentifier="UpdatePassViewController" modalPresentationStyle="fullScreen" id="uSV-tN-i8N" customClass="UpdatePassViewController" customModule="bebasapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g71-A3-MCO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jJ-Au-o3m">
+                                <rect key="frame" x="25" y="124" width="343" height="29"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lengkapi data terakhir berikut untuk masuk ke aplikasi Mega Mall" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHm-wa-NJq">
+                                <rect key="frame" x="25" y="173" width="343" height="32.333333333333343"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8t4-kK-GQG">
+                                <rect key="frame" x="25" y="738" width="343" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="utt-hM-FxD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save Update">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveupdate:" destination="uSV-tN-i8N" eventType="touchUpInside" id="30O-zN-jjV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qF-03-WrW">
+                                <rect key="frame" x="25" y="285.33333333333331" width="343" height="16.333333333333314"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Rahasia12345" borderStyle="roundedRect" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="CRW-68-IOx">
+                                <rect key="frame" x="25" y="321.66666666666669" width="343" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MfQ-DZ-6Ne"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <stackView opaque="NO" contentMode="left" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gIr-gO-AYX">
+                                <rect key="frame" x="25" y="381.66666666666669" width="343" height="14"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="Y03-1W-aJS">
+                                        <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="C07-HD-r58"/>
+                                            <constraint firstAttribute="height" constant="14" id="KXP-vi-KxB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kata sandi harus 6 karakter atau lebih" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpU-CN-yP8">
+                                        <rect key="frame" x="24" y="0.0" width="319" height="14"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <color key="highlightedColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wq0-Ze-DsQ">
+                                <rect key="frame" x="25" y="425.66666666666669" width="343" height="16.333333333333314"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Alamat Email/ No Telepon Anda" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="vKT-kZ-okK">
+                                <rect key="frame" x="25" y="462" width="343" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kXK-iJ-vx6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBf-Hk-FSp">
+                                <rect key="frame" x="314" y="472" width="44" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_view_pass" title=""/>
+                                <connections>
+                                    <action selector="hideConfirmPass:" destination="uSV-tN-i8N" eventType="touchUpInside" id="0Xo-l0-5iQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFu-hq-P0m">
+                                <rect key="frame" x="314" y="331.66666666666669" width="44" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_view_pass" title=""/>
+                                <connections>
+                                    <action selector="hideNewPass:" destination="uSV-tN-i8N" eventType="touchUpInside" id="zsL-lD-OZq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d5m-hO-thj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CRW-68-IOx" firstAttribute="bottom" secondItem="WFu-hq-P0m" secondAttribute="bottom" constant="10" id="13A-bg-Axi"/>
+                            <constraint firstItem="d5m-hO-thj" firstAttribute="trailing" secondItem="pHm-wa-NJq" secondAttribute="trailing" constant="25" id="1pk-gp-zh6"/>
+                            <constraint firstItem="5jJ-Au-o3m" firstAttribute="leading" secondItem="d5m-hO-thj" secondAttribute="leading" constant="25" id="2QU-bl-5Lp"/>
+                            <constraint firstItem="d5m-hO-thj" firstAttribute="trailing" secondItem="vKT-kZ-okK" secondAttribute="trailing" constant="25" id="2x7-8V-ghm"/>
+                            <constraint firstItem="CRW-68-IOx" firstAttribute="trailing" secondItem="WFu-hq-P0m" secondAttribute="trailing" constant="10" id="33z-jQ-Uyj"/>
+                            <constraint firstItem="Wq0-Ze-DsQ" firstAttribute="leading" secondItem="d5m-hO-thj" secondAttribute="leading" constant="25" id="5EK-c3-O9X"/>
+                            <constraint firstItem="d5m-hO-thj" firstAttribute="trailing" secondItem="5jJ-Au-o3m" secondAttribute="trailing" constant="25" id="89G-CT-XzI"/>
+                            <constraint firstItem="d5m-hO-thj" firstAttribute="bottom" secondItem="8t4-kK-GQG" secondAttribute="bottom" constant="30" id="DyN-73-mfC"/>
+                            <constraint firstItem="d5m-hO-thj" firstAttribute="trailing" secondItem="CRW-68-IOx" secondAttribute="trailing" constant="25" id="EcU-fg-2gK"/>
+                            <constraint firstItem="CRW-68-IOx" firstAttribute="leading" secondItem="d5m-hO-thj" secondAttribute="leading" constant="25" id="F57-a8-hfe"/>
+                            <constraint firstItem="vKT-kZ-okK" firstAttribute="bottom" secondItem="tBf-Hk-FSp" secondAttribute="bottom" constant="10" id="FOp-QO-99c"/>
+                            <constraint firstItem="8qF-03-WrW" firstAttribute="top" secondItem="pHm-wa-NJq" secondAttribute="bottom" constant="80" id="Hm9-a1-Vzy"/>
+                            <constraint firstItem="d5m-hO-thj" firstAttribute="trailing" secondItem="8t4-kK-GQG" secondAttribute="trailing" constant="25" id="Hwx-1s-NF3"/>
+                            <constraint firstItem="vKT-kZ-okK" firstAttribute="leading" secondItem="d5m-hO-thj" secondAttribute="leading" constant="25" id="K75-2G-jkV"/>
+                            <constraint firstItem="vKT-kZ-okK" firstAttribute="top" secondItem="Wq0-Ze-DsQ" secondAttribute="bottom" constant="20" id="Rab-aX-fcg"/>
+                            <constraint firstItem="d5m-hO-thj" firstAttribute="trailing" secondItem="8qF-03-WrW" secondAttribute="trailing" constant="25" id="RjB-qN-sPO"/>
+                            <constraint firstItem="Wq0-Ze-DsQ" firstAttribute="top" secondItem="gIr-gO-AYX" secondAttribute="bottom" constant="30" id="Uzg-XA-Oko"/>
+                            <constraint firstItem="d5m-hO-thj" firstAttribute="trailing" secondItem="gIr-gO-AYX" secondAttribute="trailing" constant="25" id="VEx-Fb-0EP"/>
+                            <constraint firstItem="pHm-wa-NJq" firstAttribute="top" secondItem="5jJ-Au-o3m" secondAttribute="bottom" constant="20" id="cP3-gq-tj8"/>
+                            <constraint firstItem="vKT-kZ-okK" firstAttribute="trailing" secondItem="tBf-Hk-FSp" secondAttribute="trailing" constant="10" id="dQS-ka-PPZ"/>
+                            <constraint firstItem="gIr-gO-AYX" firstAttribute="top" secondItem="CRW-68-IOx" secondAttribute="bottom" constant="10" id="dpb-As-prn"/>
+                            <constraint firstItem="pHm-wa-NJq" firstAttribute="leading" secondItem="d5m-hO-thj" secondAttribute="leading" constant="25" id="hS2-cp-LVa"/>
+                            <constraint firstItem="tBf-Hk-FSp" firstAttribute="top" secondItem="vKT-kZ-okK" secondAttribute="top" constant="10" id="jFf-gY-HHn"/>
+                            <constraint firstItem="5jJ-Au-o3m" firstAttribute="top" secondItem="d5m-hO-thj" secondAttribute="top" constant="65" id="oXG-4L-hyf"/>
+                            <constraint firstItem="8qF-03-WrW" firstAttribute="leading" secondItem="d5m-hO-thj" secondAttribute="leading" constant="25" id="pln-lR-OyG"/>
+                            <constraint firstItem="WFu-hq-P0m" firstAttribute="top" secondItem="CRW-68-IOx" secondAttribute="top" constant="10" id="qfN-19-Cdw"/>
+                            <constraint firstItem="gIr-gO-AYX" firstAttribute="leading" secondItem="d5m-hO-thj" secondAttribute="leading" constant="25" id="xYz-GY-Nes"/>
+                            <constraint firstItem="8t4-kK-GQG" firstAttribute="leading" secondItem="d5m-hO-thj" secondAttribute="leading" constant="25" id="ySt-Lg-Sq0"/>
+                            <constraint firstItem="d5m-hO-thj" firstAttribute="trailing" secondItem="Wq0-Ze-DsQ" secondAttribute="trailing" constant="25" id="yv6-77-CZj"/>
+                            <constraint firstItem="CRW-68-IOx" firstAttribute="top" secondItem="8qF-03-WrW" secondAttribute="bottom" constant="20" id="za4-bU-A8l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vKD-lx-I1P">
+                        <barButtonItem key="backBarButtonItem" title="    " id="gto-BU-vVd"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="confirmPass" destination="vKT-kZ-okK" id="sPE-nd-Fud"/>
+                        <outlet property="newPassword" destination="CRW-68-IOx" id="Q48-Rj-SZP"/>
+                        <outlet property="saveUpdate" destination="8t4-kK-GQG" id="Wlr-DH-pQv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1d-zh-6Kg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663.7681159420292" y="805.58035714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_view_pass" width="20" height="20"/>
+        <image name="info" width="14" height="14"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

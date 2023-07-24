@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="YOP-lB-Yra">
+            <objects>
+                <viewController storyboardIdentifier="HomeController" id="Fkz-x2-Xpd" customClass="HomeController" customModule="bebasapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dGH-DN-xfk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kq0-Sk-C9S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.lodge" catalog="system" selectedImage="house.lodge" id="uBF-eh-2mQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4x8-tx-AOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1237" y="474"/>
+        </scene>
+        <!--Shop-->
+        <scene sceneID="VyB-1D-qkc">
+            <objects>
+                <viewController storyboardIdentifier="ShopViewController" id="ayn-gc-yGB" customClass="ShopViewController" customModule="bebasapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sEZ-cJ-FoN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DsV-UM-y7w">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ewj-GF-3Bt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DsV-UM-y7w" firstAttribute="top" secondItem="ewj-GF-3Bt" secondAttribute="top" id="POr-1N-yMA"/>
+                            <constraint firstItem="ewj-GF-3Bt" firstAttribute="bottom" secondItem="DsV-UM-y7w" secondAttribute="bottom" id="TlT-yf-N7x"/>
+                            <constraint firstItem="ewj-GF-3Bt" firstAttribute="trailing" secondItem="DsV-UM-y7w" secondAttribute="trailing" id="XGB-vr-2cA"/>
+                            <constraint firstItem="DsV-UM-y7w" firstAttribute="leading" secondItem="ewj-GF-3Bt" secondAttribute="leading" id="hFj-ac-sVG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shop" image="square.and.arrow.up.circle" catalog="system" id="xMu-J8-GQb"/>
+                    <connections>
+                        <outlet property="shopTableView" destination="DsV-UM-y7w" id="LUy-UM-3Nd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIY-O7-QCv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-466.41221374045801" y="473.94366197183103"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="yeg-Ae-H7o">
+            <objects>
+                <viewController id="drP-DS-d3D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TYO-Tn-myu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Buo-pZ-tmo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="person" catalog="system" selectedImage="person" id="tYb-wz-BN4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dag-xz-0B8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="474"/>
+        </scene>
+        <!--Tab Controller-->
+        <scene sceneID="4he-DC-maM">
+            <objects>
+                <tabBarController storyboardIdentifier="TabController" automaticallyAdjustsScrollViewInsets="NO" id="5XA-WX-aMR" customClass="TabController" customModule="bebasapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wLN-z5-kEf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Fkz-x2-Xpd" kind="relationship" relationship="viewControllers" id="AQA-7W-gzm"/>
+                        <segue destination="ayn-gc-yGB" kind="relationship" relationship="viewControllers" id="Ore-NE-U4c"/>
+                        <segue destination="drP-DS-d3D" kind="relationship" relationship="viewControllers" id="8nX-O1-e8G"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kd9-zi-ho2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-464.8854961832061" y="-288.02816901408454"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.lodge" catalog="system" width="128" height="55"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

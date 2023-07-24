@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  bebasapp
+
+  Created by Agnes Triselia Yudia on 06/07/23.
+  
+*/
+
+//Main Storyboard
+"welcome_back" = "Selamat datang di Mega Mall";
+"forgot_button" = "Lupa Sandi";
+"email_text_field" = "Masukan Alamat Email/ No Telepon Anda";
+
+//Register Storyboard
+
+
+//Reset Storyboard
+
+
+//ResetPass Storyboard
+
+
+//UpdatePass Storyboard
+
+
+//Profile&Pass Storyboard
+

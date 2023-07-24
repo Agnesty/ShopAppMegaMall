@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  bebasapp
+
+  Created by Agnes Triselia Yudia on 06/07/23.
+  
+*/
+
+//Main Storyboard
+"welcome_back" = "Welcome Back to Mega Mall";
+"forgot_button" = "Forgot Button";
+"email_text_field" = "Enter your email address/phone number";
+
+
+
+//Register Storyboard
+
+
+//Reset Storyboard
+
+
+//ResetPass Storyboard
+
+
+//UpdatePass Storyboard
+
+
+//Profile&Pass Storyboard
+
